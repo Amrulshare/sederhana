@@ -1,3 +1,41 @@
 body {
   overflow-x: hidden !important;
 }
+
+a {
+  text-decoration: none !important;
+}
+
+#loader {
+  @extend .position-fixed,
+    .d-flex,
+    .justify-content-center,
+    .align-items-center;
+  inset: 0px;
+}
+
+.appwrapper {
+  @include make-container();
+  @extend .px-0;
+}
+.wrapper {
+  @extend .row;
+  @extend .gx-0;
+}
+
+.main-content {
+  @extend .vh-100;
+  transition: margin 0.3s;
+}
+
+@include media-breakpoint-up(md) {
+  .main-content {
+    margin-left: 16.25rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  body.collapsed .main-content {
+    margin-left: 0;
+  }
+}
