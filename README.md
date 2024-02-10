@@ -1,2 +1,1 @@
-# sederhana
- React admin dashboard based on bootstrap and sass
+React admin dashboard based on bootstrap and sass
