@@ -1,7 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { HashLoader } from "react-spinners";
-import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
+import { Formpages } from "./pages/Components";
 
 function App() {
   const [loader, setLoader] = React.useState<boolean>(false);
@@ -20,7 +21,8 @@ function App() {
         </div>
       ) : (
         <Routes>
-          <Route path="" element={<Home />} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/formpages" element={<Formpages />} />
         </Routes>
       )}
     </>

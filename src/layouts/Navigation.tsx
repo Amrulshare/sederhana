@@ -21,7 +21,7 @@ const MenuItem = [
     items: [
       {
         label: "Form",
-        path: "/form",
+        path: "/formpages",
         icon: <RiFileEditLine size={21} />,
       },
       {

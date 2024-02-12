@@ -39,3 +39,7 @@ a {
     margin-left: 0;
   }
 }
+
+.content-body {
+  @extend .p-2;
+}

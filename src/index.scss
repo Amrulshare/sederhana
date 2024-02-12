@@ -5,6 +5,9 @@
 @import "~bootstrap/scss/variables";
 
 /* variable */
+@import "./sass/_variables.scss";
+$body-color: #313131;
+$body-bg: #f6f9fc;
 $nav-link-color: #313131;
 /* Bootstrap core */
 @import "~bootstrap/scss/bootstrap";
@@ -12,3 +15,4 @@ $nav-link-color: #313131;
 /* Dashboard */
 @import "./sass/base";
 @import "./sass/navigation";
+@import "./sass/components/card";

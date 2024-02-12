@@ -1,0 +1,17 @@
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 2px 0 rgba(145, 158, 171, 0.3),
+    0 12px 24px -4px rgba(145, 158, 171, 0.12);
+  border-radius: 6px;
+}
+.card-body {
+  padding: 20px;
+}
+
+.card-body p {
+  border-top: 1px solid #e5eaef;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
