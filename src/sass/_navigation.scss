@@ -1,0 +1,58 @@
+.header {
+  background-color: $body-color;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  @extend .w-100;
+}
+
+.navigator {
+  @extend .navbar;
+  height: 64px;
+  background-color: $body-bg;
+}
+
+.header .navigator .navbar-toggler {
+  cursor: pointer;
+}
+
+.sidebar {
+  z-index: 2000;
+  width: 16.25rem;
+  height: 100vh;
+  margin-left: 16.25rem;
+  transition: margin 0.3s;
+  @extend .bg-white;
+}
+@include media-breakpoint-up(md) {
+  .sidebar {
+    margin-left: 0;
+  }
+}
+
+.sidebar-brand {
+  @extend .d-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.15rem 1.5rem;
+  height: 64px;
+}
+
+@include media-breakpoint-up(md) {
+  body.collapsed .sidebar {
+    margin-left: -16.25rem;
+  }
+}
+
+.sidebar-nav ul {
+  list-style-type: none;
+}
+
+.sidebar-nav ul li a {
+  padding: 12px 25px;
+}
+
+.sidebar-nav .nav-item .nav-link:hover {
+  background-color: whitesmoke;
+}

@@ -10,7 +10,7 @@ function App() {
     setLoader(true);
     setTimeout(() => {
       setLoader(false);
-    }, 50000);
+    }, 3000);
   }, []);
   return (
     <>

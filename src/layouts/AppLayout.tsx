@@ -1,5 +1,6 @@
 import React from "react";
 import Meta from "./Meta";
+import Sidebar from "./Sidebar";
 import Headernav from "./Header";
 
 interface Props {
@@ -13,7 +14,7 @@ export default function AppLayout({ title, children }: Props) {
       <Meta pageTitle={title} />
       <div className="appwrapper">
         <div className="wrapper">
-          {/* sidebar */}
+          <Sidebar />
           <div className="main-content col d-flex flex-column position-relative">
             <Headernav />
             <main className="flex-grow-1">
