@@ -33,7 +33,6 @@
 
 .sidebar-brand {
   @extend .d-flex;
-  justify-content: center;
   align-items: center;
   padding: 1.15rem 1.5rem;
   height: 64px;
@@ -45,14 +44,17 @@
   }
 }
 
-.sidebar-nav ul {
-  list-style-type: none;
+.nav-item .nav-link:hover {
+  background-color: #f5f6f6 !important;
+  color: #313131;
 }
 
-.sidebar-nav ul li a {
-  padding: 12px 25px;
+.nav-link.active:hover {
+  background-color: #f5f6f6 !important;
+  color: #313131;
 }
 
-.sidebar-nav .nav-item .nav-link:hover {
-  background-color: whitesmoke;
+.nav-pills .nav-link.active {
+  background-color: #f5f6f6 !important;
+  color: #313131;
 }

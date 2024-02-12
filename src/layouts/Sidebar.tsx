@@ -8,9 +8,9 @@ export default function Sidebar() {
         aria-label="sidebar"
       >
         <div className="sidebar-brand">
-          <span>Logo</span>
+          <span className="lead fs-3 fw-semibold">Sederhana</span>
         </div>
-        <div className="d-flex flex-column">
+        <div className="py-3 px-3">
           <Navigation />
         </div>
       </div>
